@@ -5,13 +5,13 @@ export default class App extends Component {
 
     render() {
         return <div className='container-fluid'>
-            <div className='col-10 col-xl-5 mx-lg-auto mt-5 bg-light border'>
+            <div className='col-12 col-md-10 col-xl-5 mx-lg-auto mt-5 bg-light border'>
                 <div className='row'>
-                    <div className='col-6 gx-1'>
-                        <img src={require('./img/ChildrenAtlasBook.jpg')}/>
+                    <div className='col-12 col-md-6 gx-xl-1 col-xl-6'>
+                        <img className='img-fluid' src={require('./img/ChildrenAtlasBook.jpg')}/>
                     </div>
 
-                    <div className='col-6'>
+                    <div className='col-12 col-md-6 col-xl-6'>
                         <div className='row'>
                             <form className='row mb-2 border-bottom'>
                                 <LabelInline label='Name:' value='The Three Picks'/>
