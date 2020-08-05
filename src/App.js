@@ -5,7 +5,7 @@ export default class App extends Component {
 
     render() {
         return <div className='container-fluid'>
-            <div className='col-12 col-xl-5 mx-lg-auto mt-5 bg-light border'>
+            <div className='col-10 col-xl-5 mx-lg-auto mt-5 bg-light border'>
                 <div className='row'>
                     <div className='col-6 gx-1'>
                         <img src={require('./img/ChildrenAtlasBook.jpg')}/>
