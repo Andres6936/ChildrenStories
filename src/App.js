@@ -8,7 +8,7 @@ export default class App extends Component {
             <div className='col-6 mx-auto mt-5 bg-light border'>
                 <div className='row'>
                     <div className='col-6'>
-
+                        <img src={require('./img/ChildrenAtlasBook.jpg')}/>
                     </div>
 
                     <div className='col-6'>
