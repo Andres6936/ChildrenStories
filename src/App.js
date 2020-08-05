@@ -13,19 +13,19 @@ export default class App extends Component {
 
                     <div className='col-6'>
                         <div className='row'>
-                            <form className='row'>
+                            <form className='row mb-2 border-bottom'>
                                 <LabelInline label='Name:' value='The Three Picks'/>
                                 <LabelInline label='Number Pag:' value='54'/>
                                 <LabelInline label='Price:' value='$ 255.0'/>
                                 <LabelInline label='Units Sold:' value='3'/>
                             </form>
 
-                            <form className='row'>
+                            <form className='row mb-2 border-bottom'>
                                 <LabelInline label='Name:' value='The Martir'/>
                                 <LabelInline label='Number Pag:' value='25'/>
                             </form>
 
-                            <form className='row'>
+                            <form className='row mb-2 border-bottom'>
                                 <LabelInline label='N° Books Sold' value='64'/>
                                 <LabelInline label='Total Revenue' value='$ 123.2'/>
                             </form>
