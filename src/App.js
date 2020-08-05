@@ -11,21 +11,23 @@ export default class App extends Component {
 
                     </div>
 
-                    <div className='col-6 border'>
+                    <div className='col-6'>
                         <div className='row'>
-                            <form className='row g-3'>
+                            <form className='row border'>
                                 <LabelInline label='Name:' value='The Three Picks'/>
                                 <LabelInline label='Number Pag:' value='54'/>
                                 <LabelInline label='Price:' value='$ 255.0'/>
                                 <LabelInline label='Units Sold:' value='3'/>
                             </form>
 
-                            <form className='col-12'>
-
+                            <form className='row border'>
+                                <LabelInline label='Name:' value='The Martir'/>
+                                <LabelInline label='Number Pag:' value='25'/>
                             </form>
 
-                            <form className='col-12'>
-
+                            <form className='row border'>
+                                <LabelInline label='N° Books Sold' value='64'/>
+                                <LabelInline label='Total Revenue' value='$ 123.2'/>
                             </form>
                         </div>
                     </div>
