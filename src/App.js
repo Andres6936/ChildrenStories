@@ -15,18 +15,9 @@ export default class App extends Component {
                         <div className='row'>
                             <form className='row g-3'>
                                 <LabelInline label='Name:' value='The Three Picks'/>
-
-                                <div className='col-12'>
-                                    <label>Number Pag.:</label>
-                                </div>
-
-                                <div className='col-12'>
-                                    <label>Price:</label>
-                                </div>
-
-                                <div className='col-12'>
-                                    <label>Units Sold:</label>
-                                </div>
+                                <LabelInline label='Number Pag:' value='54'/>
+                                <LabelInline label='Price:' value='$ 255.0'/>
+                                <LabelInline label='Units Sold:' value='3'/>
                             </form>
 
                             <form className='col-12'>
