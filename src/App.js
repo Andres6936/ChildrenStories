@@ -9,30 +9,46 @@ export default class App extends Component {
         this.state ={
             index : 0,
         }
-
-        /**
-         * Reference to actual book.
-         *
-         * @type {{cover: string, pages: number, price: number, name: string}}
-         */
-        this.book = dataBooks[this.state.index];
     }
 
+    nextBook = () => {
+        if (this.state.index === dataBooks.length - 1){
+            this.setState({index: 0})
+        } else {
+            this.setState({index: this.state.index + 1})
+        }
+    }
+
+    getCoverCurrentBook(){
+        return dataBooks[this.state.index].cover;
+    }
+
+    getNameCurrentBook(){
+        return dataBooks[this.state.index].name;
+    }
+
+    getPagesCurrentBook(){
+        return dataBooks[this.state.index].pages;
+    }
+
+    getPriceCurrentBook(){
+        return dataBooks[this.state.index].price;
+    }
 
     render() {
         return <div className='container-fluid'>
             <div className='col-12 col-md-10 col-xl-5 mx-lg-auto mt-5 bg-light border'>
                 <div className='row'>
                     <div className='col-12 col-md-6 gx-xl-1 col-xl-6'>
-                        <img className='img-fluid' src={this.book.cover}/>
+                        <img className='img-fluid' src={this.getCoverCurrentBook()}/>
                     </div>
 
                     <div className='col-12 col-md-6 col-xl-6'>
                         <div className='row'>
                             <form className='row mb-2 border-bottom'>
-                                <LabelInline label='Name:' value={this.book.name}/>
-                                <LabelInline label='Number Pag:' value={this.book.pages}/>
-                                <LabelInline label='Price:' value={this.book.price}/>
+                                <LabelInline label='Name:' value={this.getNameCurrentBook()}/>
+                                <LabelInline label='Number Pag:' value={this.getPagesCurrentBook()}/>
+                                <LabelInline label='Price:' value={this.getPriceCurrentBook()}/>
                                 <LabelInline label='Units Sold:' value='3'/>
                             </form>
 
@@ -51,7 +67,7 @@ export default class App extends Component {
                             <div className='btn-group'>
                                 <button className='btn btn-primary'>Prev</button>
                                 <button className='btn btn-danger'>Buy</button>
-                                <button className='btn btn-primary'>Next</button>
+                                <button className='btn btn-primary' onClick={this.nextBook}>Next</button>
                             </div>
                         </div>
 
