@@ -9,6 +9,13 @@ export default class App extends Component {
         this.state ={
             index : 0,
         }
+
+        /**
+         * Reference to actual book.
+         *
+         * @type {{cover: string, pages: number, price: number, name: string}}
+         */
+        this.book = dataBooks[this.state.index];
     }
 
 
@@ -17,15 +24,15 @@ export default class App extends Component {
             <div className='col-12 col-md-10 col-xl-5 mx-lg-auto mt-5 bg-light border'>
                 <div className='row'>
                     <div className='col-12 col-md-6 gx-xl-1 col-xl-6'>
-                        <img className='img-fluid' src={require('./img/ChildrenAtlasBook.jpg')}/>
+                        <img className='img-fluid' src={this.book.cover}/>
                     </div>
 
                     <div className='col-12 col-md-6 col-xl-6'>
                         <div className='row'>
                             <form className='row mb-2 border-bottom'>
-                                <LabelInline label='Name:' value={dataBooks[this.state.index].name}/>
-                                <LabelInline label='Number Pag:' value='54'/>
-                                <LabelInline label='Price:' value='$ 255.0'/>
+                                <LabelInline label='Name:' value={this.book.name}/>
+                                <LabelInline label='Number Pag:' value={this.book.pages}/>
+                                <LabelInline label='Price:' value={this.book.price}/>
                                 <LabelInline label='Units Sold:' value='3'/>
                             </form>
 
