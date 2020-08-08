@@ -11,6 +11,14 @@ export default class App extends Component {
         }
     }
 
+    prevBook = () => {
+        if (this.state.index === 0){
+            this.setState({index: dataBooks.length - 1})
+        } else {
+            this.setState({index: this.state.index - 1})
+        }
+    }
+
     nextBook = () => {
         if (this.state.index === dataBooks.length - 1){
             this.setState({index: 0})
@@ -65,7 +73,7 @@ export default class App extends Component {
 
                         <div className='row mx-auto mr-4 mt-4'>
                             <div className='btn-group'>
-                                <button className='btn btn-primary'>Prev</button>
+                                <button className='btn btn-primary' onClick={this.prevBook}>Prev</button>
                                 <button className='btn btn-danger'>Buy</button>
                                 <button className='btn btn-primary' onClick={this.nextBook}>Next</button>
                             </div>
