@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
 import {LabelInline} from "./LabelInline";
+import {dataBooks} from "./data";
 
 export default class App extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state ={
+            index : 0,
+        }
+    }
+
 
     render() {
         return <div className='container-fluid'>
@@ -14,7 +23,7 @@ export default class App extends Component {
                     <div className='col-12 col-md-6 col-xl-6'>
                         <div className='row'>
                             <form className='row mb-2 border-bottom'>
-                                <LabelInline label='Name:' value='The Three Picks'/>
+                                <LabelInline label='Name:' value={dataBooks[this.state.index].name}/>
                                 <LabelInline label='Number Pag:' value='54'/>
                                 <LabelInline label='Price:' value='$ 255.0'/>
                                 <LabelInline label='Units Sold:' value='3'/>
