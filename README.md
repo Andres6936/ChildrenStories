@@ -34,6 +34,10 @@ the best-selling book information and the collection information. If no
 book has been sold, the interface does not show information related to the
 best-selling book.
 
+<p align="center">
+    <img src="./docs/Interface.png" alt="Interface"/>
+</p>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
