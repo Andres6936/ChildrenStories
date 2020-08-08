@@ -40,7 +40,7 @@ export default class App extends Component {
             <div className='col-12 col-md-10 col-xl-5 mx-lg-auto mt-5 bg-light border'>
                 <div className='row'>
                     <div className='col-12 col-md-6 gx-xl-1 col-xl-6'>
-                        <img className='img-fluid' src={this.getCoverCurrentBook()}/>
+                        <img className='img-fluid' src={this.getCoverCurrentBook()} alt='Cover' />
                     </div>
 
                     <div className='col-12 col-md-6 col-xl-6'>
