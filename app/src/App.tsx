@@ -1,4 +1,4 @@
-import { ToggleGroup } from "radix-ui";
+import * as ToggleGroup from "@/components/ui/toggle-group";
 
 export function App() {
   return (
@@ -38,6 +38,20 @@ export function App() {
               </ToggleGroup.Item>
               <ToggleGroup.Item value='prev'>
                 <p>Next</p>
+              </ToggleGroup.Item>
+            </ToggleGroup.Root>
+
+            <ToggleGroup.Root
+              type='single'
+            >
+              <ToggleGroup.Item value='prev'>
+                <p>Option 0</p>
+              </ToggleGroup.Item>
+              <ToggleGroup.Item value='prev'>
+                <p>Option 1</p>
+              </ToggleGroup.Item>
+              <ToggleGroup.Item value='prev'>
+                <p>Option 2</p>
               </ToggleGroup.Item>
             </ToggleGroup.Root>
           </div>
