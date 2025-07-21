@@ -2,9 +2,9 @@ import { Button } from "@radix-ui/themes";
 
 export function App() {
   return (
-    <main className="flex flex:1 align-items:center justify-content:center">
-      <section className="flex flex:row border:1px|solid|gray-80 r:10 bg:fade-96">
-        <div className="flex min-w:25rem aspect-ratio:3/4 bg:gray-90">
+    <main className="flex flex:1 align-items:center justify-content:center bg:gray-90">
+      <section className="flex flex:row border:1px|solid|gray-80 r:10 bg:fade-96 box-shadow:0|4px|6px|-1px|rgb(0|0|0/0.1),0|2px|4px|-2px|rgb(0|0|0/0.1)">
+        <div className="flex min-w:25rem aspect-ratio:3/4">
           <img
             className="r:10 w:100%"
             src="/public/img/ChildrenAtlasBook.jpg"
