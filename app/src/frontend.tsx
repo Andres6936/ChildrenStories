@@ -7,15 +7,19 @@
 
 import "./index.css";
 import '@master/css'
+import "@radix-ui/themes/styles.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { Theme } from "@radix-ui/themes";
 import { App } from "./App";
 
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <App />
+    <Theme className="flex flex:1 flex:col">
+      <App />
+    </Theme>
   </StrictMode>
 );
 

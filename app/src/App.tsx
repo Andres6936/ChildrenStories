@@ -1,9 +1,9 @@
-import * as ToggleGroup from "@/components/ui/toggle-group";
+import { Button } from "@radix-ui/themes";
 
 export function App() {
   return (
     <main className="flex flex:1 align-items:center justify-content:center">
-      <section className="flex flex:row border:1px|solid|gray-80 r:10">
+      <section className="flex flex:row border:1px|solid|gray-80 r:10 bg:fade-96">
         <div className="flex min-w:25rem aspect-ratio:3/4 bg:gray-90">
           <img
             className="r:10 w:100%"
@@ -26,34 +26,30 @@ export function App() {
             <p>Total Revenue:</p>
           </div>
 
-          <div>
-            <ToggleGroup.Root
-              type='single'
-            >
-              <ToggleGroup.Item value='prev'>
-                <p>Prev</p>
-              </ToggleGroup.Item>
-              <ToggleGroup.Item value='prev'>
-                <p>Buy</p>
-              </ToggleGroup.Item>
-              <ToggleGroup.Item value='prev'>
-                <p>Next</p>
-              </ToggleGroup.Item>
-            </ToggleGroup.Root>
+          <div className="flex flex:col gap:1rem">
+            <div className="flex flex:row gap:0.3rem">
+              <Button className="">
+                Prev
+              </Button>
+              <Button className="">
+                Buy
+              </Button>
+              <Button className="">
+                Next
+              </Button>
+            </div>
 
-            <ToggleGroup.Root
-              type='single'
-            >
-              <ToggleGroup.Item value='prev'>
-                <p>Option 0</p>
-              </ToggleGroup.Item>
-              <ToggleGroup.Item value='prev'>
-                <p>Option 1</p>
-              </ToggleGroup.Item>
-              <ToggleGroup.Item value='prev'>
-                <p>Option 2</p>
-              </ToggleGroup.Item>
-            </ToggleGroup.Root>
+            <div className="flex flex:row gap:0.3rem">
+              <Button>
+                Option 0
+              </Button>
+              <Button>
+                Option 1
+              </Button>
+              <Button>
+                Option 2
+              </Button>
+            </div>
           </div>
         </div>
 

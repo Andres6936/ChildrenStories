@@ -11,7 +11,7 @@
   "dependencies": {
     "@master/css": "^1.37.8",
     "@master/normal.css": "^3.2.0",
-    "radix-ui": "^1.4.2",
+    "@radix-ui/themes": "^3.2.1",
     "react": "^19",
     "react-dom": "^19"
   },
