@@ -1,13 +1,17 @@
+import { ToggleGroup } from "radix-ui";
+
 export function App() {
   return (
     <main className="flex flex:1 align-items:center justify-content:center">
       <section className="flex flex:row border:1px|solid|gray-80 r:10">
-        <img
-          className="r:10"
-          src="/public/img/ChildrenAtlasBook.jpg"
-          alt="Image and cover of the book"
-        />
-        <div className="flex flex:col p:1rem">
+        <div className="flex min-w:25rem aspect-ratio:3/4 bg:gray-90">
+          <img
+            className="r:10 w:100%"
+            src="/public/img/ChildrenAtlasBook.jpg"
+            alt="Image and cover of the book"
+          />
+        </div>
+        <div className="flex flex:col p:1rem min-w:25rem">
           <div>
             <p>Name:</p>
             <p>Number Pages:</p>
@@ -23,7 +27,19 @@ export function App() {
           </div>
 
           <div>
-
+            <ToggleGroup.Root
+              type='single'
+            >
+              <ToggleGroup.Item value='prev'>
+                <p>Prev</p>
+              </ToggleGroup.Item>
+              <ToggleGroup.Item value='prev'>
+                <p>Buy</p>
+              </ToggleGroup.Item>
+              <ToggleGroup.Item value='prev'>
+                <p>Next</p>
+              </ToggleGroup.Item>
+            </ToggleGroup.Root>
           </div>
         </div>
 
