@@ -1,4 +1,4 @@
-import { Button } from "@radix-ui/themes";
+import { Button, Separator } from "@radix-ui/themes";
 
 export function App() {
   return (
@@ -18,13 +18,19 @@ export function App() {
             <p>Price:</p>
             <p>Units Sold:</p>
 
+            <Separator my="4" size="4"/>
+
             <p>Author:</p>
             <p>Publisher:</p>
             <p>Publication Date:</p>
 
+            <Separator my="4" size="4"/>
+
             <p>Total Sales:</p>
             <p>Total Revenue:</p>
           </div>
+
+          <Separator my="4" size="4" />
 
           <div className="flex flex:col gap:0.5rem">
             <div className="flex flex:row gap:0.3rem">
@@ -52,8 +58,6 @@ export function App() {
             </div>
           </div>
         </div>
-
-
       </section>
     </main>
   );
