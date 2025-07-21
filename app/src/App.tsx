@@ -12,22 +12,49 @@ export function App() {
           />
         </div>
         <div className="flex flex:col p:1rem min-w:25rem">
-          <div className="flex flex:1 flex:col">
-            <p>Name:</p>
-            <p>Number Pages:</p>
-            <p>Price:</p>
-            <p>Units Sold:</p>
+          <div className="flex flex:1 flex:col gap:0.5rem">
+            <Line
+              label="Name"
+              value="Children Atlas Book"
+            />
+            <Line
+              label="Number Pages"
+              value="21"
+            />
+            <Line
+              label="Price"
+              value="$123"
+            />
+            <Line
+              label="Units Sold"
+              value="3"
+            />
 
-            <Separator my="4" size="4"/>
+            <Separator my="4" size="4" />
 
-            <p>Author:</p>
-            <p>Publisher:</p>
-            <p>Publication Date:</p>
+            <Line
+              label="Author"
+              value="The Martir"
+            />
+            <Line
+              label="Publisher"
+              value="National Library"
+            />
+            <Line
+              label="Publication Date"
+              value="2025-05-17"
+            />
 
-            <Separator my="4" size="4"/>
+            <Separator my="4" size="4" />
 
-            <p>Total Sales:</p>
-            <p>Total Revenue:</p>
+            <Line
+              label="Total Sales"
+              value="$1,451"
+            />
+            <Line
+              label="Total Revenue"
+              value="$341"
+            />
           </div>
 
           <Separator my="4" size="4" />
@@ -61,6 +88,20 @@ export function App() {
       </section>
     </main>
   );
+}
+
+type LineProps = {
+  label: string
+  value: string
+}
+
+function Line(props: LineProps) {
+  return (
+    <div className="flex align-items:center">
+      <p className="flex flex:1">{props.label}:</p>
+      <p className="flex flex:1">{props.value}</p>
+    </div>
+  )
 }
 
 export default App;
