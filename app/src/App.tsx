@@ -1,23 +1,35 @@
-import { APITester } from "./APITester";
-import "./index.css";
-
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
-
 export function App() {
   return (
-    <div className="app">
-      <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
-      </div>
+    <main className="flex flex:1 align-items:center justify-content:center">
+      <section className="flex flex:row border:1px|solid|gray-80 r:10">
+        <img
+          className="r:10"
+          src="/public/img/ChildrenAtlasBook.jpg"
+          alt="Image and cover of the book"
+        />
+        <div className="flex flex:col p:1rem">
+          <div>
+            <p>Name:</p>
+            <p>Number Pages:</p>
+            <p>Price:</p>
+            <p>Units Sold:</p>
 
-      <h1>Bun + React</h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <APITester />
-    </div>
+            <p>Author:</p>
+            <p>Publisher:</p>
+            <p>Publication Date:</p>
+
+            <p>Total Sales:</p>
+            <p>Total Revenue:</p>
+          </div>
+
+          <div>
+
+          </div>
+        </div>
+
+
+      </section>
+    </main>
   );
 }
 
