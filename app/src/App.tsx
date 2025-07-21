@@ -12,7 +12,7 @@ export function App() {
           />
         </div>
         <div className="flex flex:col p:1rem min-w:25rem">
-          <div>
+          <div className="flex flex:1 flex:col">
             <p>Name:</p>
             <p>Number Pages:</p>
             <p>Price:</p>
@@ -26,27 +26,27 @@ export function App() {
             <p>Total Revenue:</p>
           </div>
 
-          <div className="flex flex:col gap:1rem">
+          <div className="flex flex:col gap:0.5rem">
             <div className="flex flex:row gap:0.3rem">
-              <Button className="">
+              <Button className="flex! flex:1!">
                 Prev
               </Button>
-              <Button className="">
+              <Button className="flex! flex:1!">
                 Buy
               </Button>
-              <Button className="">
+              <Button className="flex! flex:1!">
                 Next
               </Button>
             </div>
 
             <div className="flex flex:row gap:0.3rem">
-              <Button>
+              <Button className="flex! flex:1!">
                 Option 0
               </Button>
-              <Button>
+              <Button className="flex! flex:1!">
                 Option 1
               </Button>
-              <Button>
+              <Button className="flex! flex:1!">
                 Option 2
               </Button>
             </div>
