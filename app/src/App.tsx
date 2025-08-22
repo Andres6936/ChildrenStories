@@ -8,19 +8,27 @@ export function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const story = useMemo(() => Stories[currentIndex], [currentIndex])
 
+  const nextStory = () => {
+    if (currentIndex === Stories.length - 1) {
+      setCurrentIndex(0)
+    }
+    setCurrentIndex(prev => prev + 1)
+  }
+
+  const prevStory = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(Stories.length - 1)
+    }
+    setCurrentIndex(prev => prev - 1)
+  }
+
   if (!story) return null;
 
   return (
     <main className="flex flex:1 align-items:center justify-content:center bg:gray-90">
       <section className="flex flex:row border:1px|solid|gray-80 r:10 bg:fade-96 box-shadow:0|4px|6px|-1px|rgb(0|0|0/0.1),0|2px|4px|-2px|rgb(0|0|0/0.1)">
         <History.Root model={story}>
-          <div className="flex min-w:25rem aspect-ratio:3/4">
-            <img
-              className="r:10 w:100%"
-              src="/public/img/ChildrenAtlasBook.jpg"
-              alt="Image and cover of the book"
-            />
-          </div>
+          <History.Image />
           <div className="flex flex:col p:1rem min-w:25rem">
             <div className="flex flex:1 flex:col gap:0.5rem">
               <Line
@@ -71,13 +79,13 @@ export function App() {
 
             <div className="flex flex:col gap:0.5rem">
               <div className="flex flex:row gap:0.3rem">
-                <Button className="flex! flex:1!">
+                <Button className="flex! flex:1!" onClick={prevStory}>
                   Prev
                 </Button>
                 <Button className="flex! flex:1!">
                   Buy
                 </Button>
-                <Button className="flex! flex:1!">
+                <Button className="flex! flex:1!" onClick={nextStory}>
                   Next
                 </Button>
               </div>
