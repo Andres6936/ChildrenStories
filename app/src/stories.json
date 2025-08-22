@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "Children Atlas Book",
+        "NumberPages": "21",
+        "Price": 123,
+        "UnitsSold": 3,
+        "Image": {
+            "Uri": "/public/img/ChildrenAtlasBook.jpg"
+        },
+        "Author": "The Martir",
+        "Publisher": "National Library",
+        "PublicationDate": "2025-05-17",
+        "TotalSales": 1451,
+        "TotalRevenue": 341
+    }
+]
