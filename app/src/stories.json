@@ -12,5 +12,131 @@
         "PublicationDate": "2025-05-17",
         "TotalSales": 1451,
         "TotalRevenue": 341
+    },
+    {
+        "Name": "Jungle Adventure",
+        "NumberPages": "28",
+        "Price": 15,
+        "UnitsSold": 10,
+        "Image": {
+            "Uri": "/public/img/ConnectTheDots.jpg"
+        },
+        "Author": "Explorer Alex",
+        "Publisher": "Wild World Books",
+        "PublicationDate": "2024-01-15",
+        "TotalSales": 150,
+        "TotalRevenue": 1500
+    },
+    {
+        "Name": "The Little Robot's Dream",
+        "NumberPages": "20",
+        "Price": 10,
+        "UnitsSold": 25,
+        "Image": {
+            "Uri": "/public/img/ExploreThStars.jpg"
+        },
+        "Author": "Inventive Amy",
+        "Publisher": "Future Tales Publishing",
+        "PublicationDate": "2023-11-01",
+        "TotalSales": 250,
+        "TotalRevenue": 2500
+    },
+    {
+        "Name": "Space Explorers",
+        "NumberPages": "35",
+        "Price": 20,
+        "UnitsSold": 5,
+        "Image": {
+            "Uri": "/public/img/OnceUponATime.jpg"
+        },
+        "Author": "Astronaut Bob",
+        "Publisher": "Cosmic Chronicles",
+        "PublicationDate": "2024-03-20",
+        "TotalSales": 100,
+        "TotalRevenue": 1000
+    },
+    {
+        "Name": "Under the Sea",
+        "NumberPages": "22",
+        "Price": 12,
+        "UnitsSold": 18,
+        "Image": {
+            "Uri": "/public/img/RedRidingHood.jpg"
+        },
+        "Author": "Oceanographer Coral",
+        "Publisher": "Deep Blue Books",
+        "PublicationDate": "2023-09-10",
+        "TotalSales": 216,
+        "TotalRevenue": 2160
+    },
+    {
+        "Name": "Knights and Dragons",
+        "NumberPages": "30",
+        "Price": 18,
+        "UnitsSold": 7,
+        "Image": {
+            "Uri": "/public/img/TheDoeIntheForest.jpg"
+        },
+        "Author": "Medieval Mike",
+        "Publisher": "Castle Publications",
+        "PublicationDate": "2024-02-05",
+        "TotalSales": 126,
+        "TotalRevenue": 1260
+    },
+    {
+        "Name": "The Magic Treehouse",
+        "NumberPages": "26",
+        "Price": 14,
+        "UnitsSold": 12,
+        "Image": {
+            "Uri": "/public/img/TheLoneluGrizzly.jpg"
+        },
+        "Author": "Enchanted Emily",
+        "Publisher": "Fantasy Forest Books",
+        "PublicationDate": "2023-12-18",
+        "TotalSales": 168,
+        "TotalRevenue": 1680
+    },
+    {
+        "Name": "Dinosaurs Roar",
+        "NumberPages": "24",
+        "Price": 16,
+        "UnitsSold": 9,
+        "Image": {
+            "Uri": "/public/img/ThreeBlindMice.jpg"
+        },
+        "Author": "Paleontologist Pat",
+        "Publisher": "Prehistoric Press",
+        "PublicationDate": "2024-04-25",
+        "TotalSales": 144,
+        "TotalRevenue": 1440
+    },
+    {
+        "Name": "Farm Animals",
+        "NumberPages": "18",
+        "Price": 8,
+        "UnitsSold": 30,
+        "Image": {
+            "Uri": "/public/img/UnSeenWorld.jpg"
+        },
+        "Author": "Farmer Fred",
+        "Publisher": "Barnyard Books",
+        "PublicationDate": "2023-10-01",
+        "TotalSales": 240,
+        "TotalRevenue": 2400
+    },
+    {
+        "Name": "Cars and Trucks",
+        "NumberPages": "20",
+        "Price": 11,
+        "UnitsSold": 22,
+        "Image": {
+            "Uri": "/public/img/WakeUpRabby.jpg"
+        },
+        "Author": "Mechanic Mark",
+        "Publisher": "Engine Publishing",
+        "PublicationDate": "2024-01-30",
+        "TotalSales": 242,
+        "TotalRevenue": 2420
     }
 ]
