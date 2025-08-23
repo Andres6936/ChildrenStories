@@ -29,51 +29,24 @@ export function App() {
       <section className="flex flex:row border:1px|solid|gray-80 r:10 bg:fade-96 box-shadow:0|4px|6px|-1px|rgb(0|0|0/0.1),0|2px|4px|-2px|rgb(0|0|0/0.1)">
         <History.Root model={story}>
           <History.Image />
-          <div className="flex flex:col p:1rem min-w:25rem">
-            <div className="flex flex:1 flex:col gap:0.5rem">
-              <Line
-                label="Name"
-                value="Children Atlas Book"
-              />
-              <Line
-                label="Number Pages"
-                value="21"
-              />
-              <Line
-                label="Price"
-                value="$123"
-              />
-              <Line
-                label="Units Sold"
-                value="3"
-              />
+          <History.Section>
+            <History.Container>
+              <History.Name />
+              <History.NumberPages />
+              <History.Price />
+              <History.UnitsSold />
 
               <Separator my="4" size="4" />
 
-              <Line
-                label="Author"
-                value="The Martir"
-              />
-              <Line
-                label="Publisher"
-                value="National Library"
-              />
-              <Line
-                label="Publication Date"
-                value="2025-05-17"
-              />
+              <History.Author />
+              <History.Publisher />
+              <History.PublicationDate />
 
               <Separator my="4" size="4" />
 
-              <Line
-                label="Total Sales"
-                value="$1,451"
-              />
-              <Line
-                label="Total Revenue"
-                value="$341"
-              />
-            </div>
+              <History.TotalSales />
+              <History.TotalRevenuew/>
+            </History.Container>
 
             <Separator my="4" size="4" />
 
@@ -102,25 +75,11 @@ export function App() {
                 </Button>
               </div>
             </div>
-          </div>
+          </History.Section>
         </History.Root>
       </section>
     </main>
   );
-}
-
-type LineProps = {
-  label: string
-  value: string
-}
-
-function Line(props: LineProps) {
-  return (
-    <div className="flex align-items:center">
-      <p className="flex flex:1">{props.label}:</p>
-      <p className="flex flex:1">{props.value}</p>
-    </div>
-  )
 }
 
 export default App;
