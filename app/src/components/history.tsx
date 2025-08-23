@@ -51,7 +51,7 @@ function Container(props: React.ComponentPropsWithRef<'div'>) {
 
 type LineProps = {
     label: string
-    value: string
+    value: string | number
 }
 
 function Line(props: LineProps) {
@@ -64,82 +64,100 @@ function Line(props: LineProps) {
 }
 
 function Name() {
+    const { model } = useRootContext()
+
     return (
         <Line
             label="Name"
-            value="Children Atlas Book"
+            value={model.Name}
         />
     )
 }
 
 function NumberPages() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Number Pages"
-            value="21"
+            value={model.NumberPages}
         />
     )
 }
 
 function Price() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Price"
-            value="$123"
+            value={model.Price}
         />
     )
 }
 
 function UnitsSold() {
+    const { model } = useRootContext()
+
     return (
         <Line
             label="Units Sold"
-            value="3"
+            value={model.UnitsSold}
         />
     )
 }
 
 function Author() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Author"
-            value="The Martir"
+            value={model.Author}
         />
     )
 }
 
 function Publisher() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Publisher"
-            value="National Library"
+            value={model.Publisher}
         />
     )
 }
 
 function PublicationDate() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Publication Date"
-            value="2025-05-17"
+            value={model.PublicationDate}
         />
     )
 }
 
 function TotalSales() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Total Sales"
-            value="$1,451"
+            value={model.TotalSales}
         />
     )
 }
 
 function TotalRevenuew() {
+    const { model } = useRootContext()
+    
     return (
         <Line
             label="Total Revenue"
-            value="$341"
+            value={model.TotalRevenue}
         />
     )
 }
